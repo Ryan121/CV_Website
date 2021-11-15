@@ -4,22 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
+    <link rel= "stylesheet" href = "/app/scss/styles.css">
     <title>Website title</title>
 </head>
 <body>
-     <!-- Navbar Section -->
-     <nav class="navbar"></nav>
-        <div class="navbar__container"></div>
-            <a href="#home" id="navbar__logo">This is a test</a>
-            <div class="navbar__toggle" id="mobile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <ul class="navbar__menu">
-            <li class="navbar__item">
-                <a href="" class="navbar__links" id="home-page">Home</a>
-            </li>
-        </ul>
+
+    <header class="header">
+        <nav class="flex flex-jc-sb flex-ai-c">
+            <a href="/" class="header__logo">
+                <img src="images/logo.svg"/>
+            </a>
+                        
+            <a href="#" class= "header__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </a>    
+            
+            <div class="header__links">
+                <a href="#" class="link">Home</a>
+                <a href="#" class="link">Experience</a>
+                <a href="#" class="link">Publications</a>
+                <a href="#" class="link">Linkedin</a>
+                <a href="#" class="link">Github</a>
+            </div>
+
+            <a href="#" class="button header__cta">Connect</a>
+            
+            
+
+        </nav>
+        
+    
+    </header>
+
+
+    
+
+        <script src="/app/js/script.js"></script>
 </body>
 </html>

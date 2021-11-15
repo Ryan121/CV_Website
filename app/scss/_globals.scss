@@ -54,3 +54,18 @@ button, .button {
     color: $white;
 }
 
+// Visibility
+
+.hide-for-mobile {
+// hide of tablet and mobile devices 
+    @include breakpoint-down(medium){
+        display:  none;
+    }
+}
+
+.hide-for-desktop {
+    // hide for desktop viewport widths
+    @include breakpoint-up(large){
+        display:  none;
+    }
+}

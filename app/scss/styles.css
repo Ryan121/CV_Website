@@ -63,10 +63,6 @@ button, .button {
   padding: 24px;
 }
 
-.header__logo img {
-  height: 5rem;
-}
-
 .header__menu > span {
   display: block;
   width: 26px;

@@ -44,7 +44,7 @@ a, a:visited, a:hover{
 // Buttons
 
 button, .button {
-    padding: 1rem 1.875rem;
+    padding: 0.875rem 2.1875rem;
     border:none;
     background: linear-gradient(to right, $grayishBlue, $brightcyan);
     font-size: $font-small;
@@ -58,14 +58,14 @@ button, .button {
 
 .hide-for-mobile {
 // hide of tablet and mobile devices 
-    @include breakpoint-down(medium){
+    @include breakpoint-down(small){
         display:  none;
     }
 }
 
 .hide-for-desktop {
     // hide for desktop viewport widths
-    @include breakpoint-up(large){
+    @include breakpoint-up(medium){
         display:  none;
     }
 }

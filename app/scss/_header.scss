@@ -1,14 +1,15 @@
 .header {
 
     nav {
-        padding: 24px;
+        padding: 1.0625rem 1.5rem;
 
     }
 
     &__logo{
 
         img {
-            //height: 5rem;
+            height: 5rem;
+            width: 5rem;
 
         }
 
@@ -30,11 +31,37 @@
     }
 
     &__links{
-        
+
         a {
+            position: relative;
             font-size: $font-small;
             color: $grayishBlue;
-            padding-right: 0.5rem;
+            transition: color 300ms ease-in-out;
+            
+            &:not(:last-child){
+                margin-right: 32px;
+
+                &::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    height: 5px;
+                    left: 0;
+                    right: 0;
+                    bottom: -30px;
+                    background: linear-gradient(to right, $brightcyan);
+                    opacity: 0;
+                    transition: opacity 300ms ease-in;
+                }
+
+                &:hover {
+                    color: $darkBlue;
+
+                    &::before {
+                        opacity: 1;
+                                       }
+                }
+            }
         }
 
     }
@@ -42,5 +69,10 @@
     &__cta {
         font-size: $font-small;
         color: $white;
+        transition: opacity 300ms ease-in-out;
+
+        &:hover{
+            opacity: 0.6;
+        }
     }
 }

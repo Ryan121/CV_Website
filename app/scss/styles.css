@@ -48,7 +48,7 @@ a, a:visited, a:hover {
 }
 
 button, .button {
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 2.1875rem;
   border: none;
   background: -webkit-gradient(linear, left top, right top, from(#96a69e), to(#2bb7da));
   background: linear-gradient(to right, #96a69e, #2bb7da);
@@ -59,8 +59,25 @@ button, .button {
   color: white;
 }
 
+@media (max-width: 39.9375em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 40em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .header nav {
-  padding: 24px;
+  padding: 1.0625rem 1.5rem;
+}
+
+.header__logo img {
+  height: 5rem;
+  width: 5rem;
 }
 
 .header__menu > span {
@@ -75,13 +92,48 @@ button, .button {
 }
 
 .header__links a {
+  position: relative;
   font-size: 0.875rem;
   color: #96a69e;
-  padding-right: 0.5rem;
+  -webkit-transition: color 300ms ease-in-out;
+  transition: color 300ms ease-in-out;
+}
+
+.header__links a:not(:last-child) {
+  margin-right: 32px;
+}
+
+.header__links a:not(:last-child)::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 5px;
+  left: 0;
+  right: 0;
+  bottom: -30px;
+  background: -webkit-gradient(linear, left top, right top, from(#2bb7da));
+  background: linear-gradient(to right, #2bb7da);
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.header__links a:not(:last-child):hover {
+  color: #2d314d;
+}
+
+.header__links a:not(:last-child):hover::before {
+  opacity: 1;
 }
 
 .header__cta {
   font-size: 0.875rem;
   color: white;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.header__cta:hover {
+  opacity: 0.6;
 }
 /*# sourceMappingURL=styles.css.map */

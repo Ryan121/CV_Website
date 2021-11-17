@@ -13,12 +13,18 @@
 <body>
 
     <header class="header">
-        <nav class="flex flex-jc-sb flex-ai-c">
+
+        <div class="overlay has-fade">
+
+            
+        </div>
+
+        <nav class="container flex flex-jc-sb flex-ai-c">
             <a href="/" class="header__logo">
                 <img src="images/logo.svg" height="80"/>
             </a>
                         
-            <a href="#" class= "header__menu hide-for-desktop">
+            <a id="btnHamburger" href="#" class= "header__toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -34,18 +40,53 @@
                 <a href="#" class="link"></a>
             </div>
 
-            <a href="#" class="button header__cta">Download CV</a>
+            <a href="#" class="button header__cta hide-for-mobile">Download CV</a>
             
             
 
         </nav>
+
+        <div class="header__menu has-fade">
+            <a href="#">Home</a>
+            <a href="#">Experience</a>
+            <a href="#">Publications</a>
+            <a href="#">Linkedin</a>
+            <a href="https://github.com/Ryan121">Github</a>
+        </div>
+
         
     
     </header>
 
+    <section class="content">
+
+        <div class="content__image">   
+         
+
+            <div>
+                <h1 class="centered">Hello World</h1>
+
+            </div>
+
+           
+        </div>
+
+
+
+
+    </section>
+        
+
+    <div class="footer">
+        <p>Designed & Developed by <a id="link" href="https://github.com/Ryan121/CV_Website/tree/master">Ryan Sers <br> </a>            
+        <p><span>&#169;</span> Updated 2021</p>
+      </div>
 
     
 
         <script src="/app/js/script.js"></script>
 </body>
 </html>
+
+
+<!-- This is placeholder text to fill the body of the webpage to test the functionality of the overlay header -->

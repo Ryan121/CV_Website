@@ -1,14 +1,23 @@
 .content{
 
+    color: $grayishBlue;
+
     h1{
         font-size: 100px;
     }
 
+
     &__temp{
         //position: relative;
         text-align: center;
-        color: white;
-       // font-size: 5rem;
+
+    }
+
+    .title{
+        position: absolute;
+        top: 5%;
+        left: 50%;
+        transform: translate(-50%, 0%);
     }
 
     .centered {
@@ -16,18 +25,21 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -70%);
+        
     }
 
     &__image{
         //position: relative;
-        background-image: url("/images/Stars.jpg") ;
+        //background-image: url("/images/Stars.jpg") ;
+        //background-color: $violet;
+        background-color: black;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;  
         min-height: 46rem;
         height: auto;
         text-align: center;
-        color: $white;
+        //color: $white;
 
         //max-width: 50;
         //opacity: 50%;
@@ -40,39 +52,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0px 40px;
-        
-
-        div1 {
-            background-color: cornflowerblue;
-            height: 200px;
-        }
-
-        div2 {
-            background-color: cyan;
-            height: 400px;
-            
-        }
-
-        div3 {
-            background-color: orange;
-            height: 900px;
-            grid-column: 2;
-        }
-
-        p
-        {
-            color: white;
-        }
-
-
-        
-            h1 {
-                color: white;
-            }
-
-            h2 {
-                color: white;
-            }
+        background-color: black;
+        color: black;
         
     }
 

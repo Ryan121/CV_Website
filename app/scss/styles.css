@@ -72,13 +72,24 @@
   visibility: hidden;
 }
 
+.content {
+  color: #96a69e;
+}
+
 .content h1 {
   font-size: 100px;
 }
 
 .content__temp {
   text-align: center;
-  color: white;
+}
+
+.content .title {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%);
 }
 
 .content .centered {
@@ -90,14 +101,13 @@
 }
 
 .content__image {
-  background-image: url("/images/Stars.jpg");
+  background-color: black;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   min-height: 46rem;
   height: auto;
   text-align: center;
-  color: white;
 }
 
 .content__grid-container {
@@ -106,35 +116,8 @@
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 0px 40px;
-}
-
-.content__grid-container div1 {
-  background-color: cornflowerblue;
-  height: 200px;
-}
-
-.content__grid-container div2 {
-  background-color: cyan;
-  height: 400px;
-}
-
-.content__grid-container div3 {
-  background-color: orange;
-  height: 900px;
-  -ms-grid-column: 2;
-  grid-column: 2;
-}
-
-.content__grid-container p {
-  color: white;
-}
-
-.content__grid-container h1 {
-  color: white;
-}
-
-.content__grid-container h2 {
-  color: white;
+  background-color: black;
+  color: black;
 }
 
 @media (min-width: 64em) {
@@ -262,7 +245,7 @@ button, .button {
 
 .header nav {
   position: relative;
-  background-color: #f3f4f6;
+  background-color: black;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
 }
@@ -334,7 +317,7 @@ button, .button {
 }
 
 .header__links a:not(:last-child):hover {
-  color: #2d314d;
+  color: #fafafa;
 }
 
 .header__links a:not(:last-child):hover::before {

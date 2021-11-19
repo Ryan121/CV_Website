@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <META HTTP-EQUIV=”refresh” CONTENT=”5″>
+    <!-- <META HTTP-EQUIV=”refresh” CONTENT=”5″> -->
 
         
     
@@ -19,7 +19,13 @@
 
     <title>Home - About Me</title>
 </head>
-<body>
+<body onLoad="timeRefresh(2000);">
+
+    <script>
+        function timeRefresh(time) {
+          setTimeout("location.reload(true);", time);
+        }
+      </script>
 
     <header class="header">
 
@@ -72,7 +78,7 @@
     <!-- About -->
      <div class="content section_seperator" id="home">
         <div class="content__container">
-            <h1 class="content__heading">Karen
+            <h1 class="content__heading">Marge
                 <p class="content__description">Example text                   
                 </p>
             </h1>

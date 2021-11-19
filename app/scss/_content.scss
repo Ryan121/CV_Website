@@ -1,78 +1,51 @@
 .content{
 
     color: $grayishBlue;
+    background-color: black;
+    //position: absolute;
+    //height: auto;
+    //min-height: 46rem;
+    //padding: 15.5rem 0px;
 
-    h1{
-        font-size: 100px;
-    }
+}
 
+.content__container{
 
-    &__temp{
-        //position: relative;
-        text-align: center;
-
-    }
-
-    .title{
-        position: absolute;
-        top: 5%;
-        left: 50%;
-        transform: translate(-50%, 0%);
-    }
-
-    .centered {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -70%);
-        
-    }
-
-    &__image{
-        //position: relative;
-        //background-image: url("/images/Stars.jpg") ;
-        //background-color: $violet;
-        background-color: black;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;  
-        min-height: 46rem;
-        height: auto;
-        text-align: center;
-        //color: $white;
-
-        //max-width: 50;
-        //opacity: 50%;
-        
-
-        
-    }
-
-    &__grid-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0px 40px;
-        background-color: black;
-        color: black;
-        
-    }
-
-    .container {
-
-        @include breakpoint-up(large){    
-          display: flex;
-          align-items: center;
-
-          
-        }
-    }
-
-    .sqaure {
-
-        background-color: $grayishBlue;
-
-        padding-left: 1rem;
-    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 90%;
+    padding: 30px
 
 
 }
+
+.content__container{
+
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: white;
+
+}
+
+.content__description{
+
+    font-size: 100px;
+    margin-bottom: 24px;
+    color: $veryLightGray;
+
+}
+
+.section_seperator {
+
+    border-bottom: 0.2rem solid $brightcyan;
+}
+
+
+
+
+    
+

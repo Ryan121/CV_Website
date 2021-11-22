@@ -1,5 +1,9 @@
 .header {
 
+    position: sticky;
+    top: 0;
+
+
     &.open {
 
         .header__toggle {
@@ -38,15 +42,19 @@
     nav {
         position: relative;
         background-color: black;
-        padding-top: 1.0625rem;
-        padding-bottom: 1.0625rem;
+        padding-top: .6325rem; // 1.625 before
+        padding-bottom: .3625rem;
     }
 
     &__logo{
+        
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: whitesmoke;
 
         img {
-            height: 5rem;
-            width: 5rem;
+            //height: 7.5rem;
+            //width: 7.5rem;
 
         }
 
@@ -66,10 +74,7 @@
             &:not(:last-child){
                 margin-bottom: 3px;
             }
-        }
-
-        
-
+        }        
     }
 
     &__menu{
@@ -91,6 +96,29 @@
         }
     }
 
+    &__sectioned{
+                            
+            //position: relative;
+            //font-size: $font-small;
+            //color: $grayishBlue;
+            //transition: color 300ms ease-in-out;
+           // max-width: 20px;
+            
+                    //padding: -30px;
+                    content: "";
+                    display: block;
+                    position: relative;
+                    height: 5px;
+                    width: 10px;
+                    left: 0;
+                    right: 0;
+                    //bottom: -30px;
+                    background: linear-gradient(to right, pink);
+                    opacity: 1;
+                    //transition: opacity 300ms ease-in;                    
+        
+   }
+
     &__links{
 
         a {
@@ -98,12 +126,13 @@
             font-size: $font-small;
             color: $grayishBlue;
             transition: color 300ms ease-in-out;
-            
-            
+            //min-width: 100px;
+            //width: 500px;
+
             &:not(:last-child){
                 margin-right: 32px;
 
-                &::before {
+               /*  &::before {
                     content: "";
                     display: block;
                     position: absolute;
@@ -114,7 +143,7 @@
                     background: linear-gradient(to right, $brightcyan);
                     opacity: 0;
                     transition: opacity 300ms ease-in;
-                }
+                } */
 
                 &:hover {
                     color: $veryLightGray;
@@ -138,6 +167,26 @@
         }
     }
 
+
 }
+
+.hero__heading span {
+    background: #008B8B; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #e7ffffb9,
+      #00dada
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #e7ffffb9,
+      #00dada
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -mo-text-fill-color: transparent;
+  }
 
 

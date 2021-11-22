@@ -1,101 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- <META HTTP-EQUIV=”refresh” CONTENT=”5″> -->
-
-        
-    
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet"> 
-    <link rel= "stylesheet" href = "app/scss/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app/scss/styles.css">
 
-
-
-    <title>Home - About Me</title>
+    <title>Home - Ryan Sers</title>
 </head>
-<body onLoad="timeRefresh(2000000);">
-    <script> 
-        function timeRefresh(time) { 
-          setTimeout("location.reload(true);", time); 
-        } 
-    </script>  
+
+<body onLoad="timeRefresh(72000000);">
+    <script > 
+        function timeRefresh(time) {
+
+            setTimeout("location.reload(true);", time);
+        }
+    </script>
 
     <header class="header">
 
         <div class="overlay has-fade">
 
-            
+
         </div>
 
         <nav class="container flex flex-jc-sb flex-ai-c">
-            <a href="/" class="header__logo">
-                <img src="images/logo.svg" height="80"/>
+            <a id="logo" href="#" class="header__logo navbar__links hero__heading"><span>RS</span>
+                <!-- <img src="/images/Welcome.jpg" /> -->
             </a>
-                        
-            <a id="btnHamburger" href="#" class= "header__toggle hide-for-desktop">
+
+            <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop">
                 <span></span>
                 <span></span>
                 <span></span>
 
-            </a>    
-            
+            </a>
+
             <div class="header__links hide-for-mobile">
-                <a href="#" class="link">About</a>
-                <a href="#" class="link">Portfolio</a>
-                <a href="#" class="link">PhD</a>
+                <a id="about-page" href="#home" class="navbar__links">About</a>
+                <a id="portf-page" href="#portfolio" class="navbar__links">Portfolio</a>
+                <a id="ph_d-page" href="#phd" class="navbar__links">&nbsp&nbsp&nbspPhD&nbsp&nbsp&nbsp&nbsp</a>
                 <a href="https://www.researchgate.net/profile/Ryan-Sers" class="link" target="_blank">Publications</a>
                 <a href="https://www.linkedin.com/in/ryan-sers-0a23379b/" class="link" target="_blank">Linkedin</a>
                 <a href="https://github.com/Ryan121" class="link" target="_blank">Github</a>
                 <a href="#" class="link"></a>
             </div>
-            
 
-            <a href="#" class="button header__cta hide-for-mobile">Contact</a>
-            
-            
+
+            <a href="#" class="button header__cta hide-for-mobile" onclick="sendMail()">Contact</a>
+
+
 
         </nav>
 
         <div class="header__menu has-fade">
-            <a href="#">Home</a>
-            <a href="#">Experience</a>
-            <a href="#">Publications</a>
-            <a href="#">Linkedin</a>
-            <a href="https://github.com/Ryan121">Github</a>
+            <a href="#home">Home</a>
+            <a href="#portfolio">Experience</a>
+            <a href="#phd">PhD</a>
+            <a href="https://www.researchgate.net/profile/Ryan-Sers" class="link" target="_blank">Publications</a>
+            <a href="https://www.linkedin.com/in/ryan-sers-0a23379b/" class="link" target="_blank">Linkedin</a>
+            <a href="https://github.com/Ryan121" class="link" target="_blank">Github</a>
         </div>
 
-        
-    
+
+
     </header>
 
     <!-- About -->
-     <div class="content section_seperator" id="home">
+    <div class="content seperator" id="home">
         <div class="content__container">
-            <h1 class="content__heading">Ryan
-                <p class="content__description">Example text                   
+            <h1 class="content__heading hero__heading"><span>Overview</span>
+                <p class="content__description">My name is Dr Ryan Sers and I am a Data Scientist based in the UK.
+                    This site is a collection of professional and academic projects and links to date, that represent
+                    some of
+                    the skills I have developed and the experience gained that could be applied to future endevours. If
+                    you are interested in any of my projects or believe have pertintent previous experience for a role
+                    please get in touch.
+
                 </p>
             </h1>
         </div>
-     </div>
+    </div>
+
+    <div class="seperator">
+
+
+    </div>
 
     <!-- Portfolio -->
-    <div class="portf" id="portfolio">
+    <!--     <div class="portf" id="portfolio">
         <div class="portf__container">
             <h1 class="portf__heading">This is a test
                 <p class="portf__description">Example text                   
+                </p>
+            </h1>
+        </div> -->
+
+    <div class="content seperator" id="portfolio">
+        <div class="content__container">
+            <h1 class="content__heading">This page is under development.. Please come back soon
+                <p class="content__description">..............
                 </p>
             </h1>
         </div>
     </div>
 
     <!-- PhD -->
-    <div class="ph_d" id="phd">
+    <!--     <div class="ph_d" id="phd">
         <div class="ph_d__container">
             <div class="ph_d__img-container"></div>
 
@@ -106,17 +123,27 @@
                 </h1>
             </div>
         </div>
+    </div> -->
+
+    <div class="content seperator" id="phd">
+        <div class="content__container">
+            <h1 class="content__heading">This page is also under development.. Please come back soon
+                <p class="content__description">......................................
+                </p>
+            </h1>
+        </div>
     </div>
+
 
     <!-- Footer -->
     <div class="footer">
-        <p>Designed by <a id="link" href="https://github.com/Ryan121/CV_Website/tree/master">Ryan Sers <br> </a>            
+        <p>Designed by <a id="link" href="https://github.com/Ryan121/CV_Website/tree/master">Ryan Sers <br> </a>
         <p>Updated Nov 2021</p>
-      </div>
+    </div>
 
-    
 
-        <script src="/app/js/script.js?1"></script>
+
+    <script src="/app/js/script.js?1"></script>
 </body>
 
 </html>

@@ -1,48 +1,100 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    //font-family: 'Kumbh Sans', sans-serif;
+    transition: all 300ms ease-in-out;
+    scroll-behavior: smooth;
+  }
+
+  .navbar__links {
+    //color: #fff;
+    //display: flex;
+    //align-items: center;
+    //justify-content: center;
+    //width: 125px;
+    //text-decoration: none;
+    height: 100%;
+    transition: all 0.3s ease;
+  }
+
+
 .content{
 
-    color: $grayishBlue;
-    background-color: black;
-    //position: absolute;
-    //height: auto;
-    //min-height: 46rem;
-    //padding: 15.5rem 0px;
-
-}
-
-.content__container{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin: 0 auto;
-    height: 90%;
-    padding: 30px
+        color: $grayishBlue;
+        background-color: black;
+        //position: absolute;
+        height: auto;
+        min-height: 46rem;
+        padding: 4rem 0px;
+        
+        transition: all 300ms ease-in-out;
 
 
-}
+    .content__container{
 
-.content__container{
+        display: flex;
+        background-color: rgba(1, 4, 15, 0.486);
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 90%;
+        padding: 0.5rem;
+        width: 50rem;
 
-    font-size: 100px;
-    margin-bottom: 24px;
-    color: white;
 
-}
+    }
 
-.content__description{
+    .content__heading{
 
-    font-size: 100px;
-    margin-bottom: 24px;
-    color: $veryLightGray;
+        font-size: 50px;
+        //margin-bottom: 24px;
+        //color: white;
+
+    }
+
+
+    .content__description{
+
+        font-size: 20px;
+        margin-bottom: 24px;
+        //color: $veryLightGray;
+
+    }
 
 }
 
 .section_seperator {
 
     border-bottom: 0.2rem solid $brightcyan;
+    //margin-bottom: 30px;
+    padding-bottom: 16px;
+    
 }
+
+.seperator{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    //margin: 0 1.1rem;
+    background-color: black;
+
+    height: auto;
+    //width: 0.5rem;
+    //color: solid $brightcyan;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-bottom: 0.1rem solid $brightcyan;
+
+}
+
+
 
 
 

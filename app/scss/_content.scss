@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    //font-family: 'Kumbh Sans', sans-serif;
+
     transition: all 300ms ease-in-out;
     scroll-behavior: smooth;
   }
@@ -18,7 +18,162 @@
     height: 100%;
     transition: all 0.3s ease;
   }
+  
+.portf__columnborder{
+    border-right:0.1rem solid $lightGrayishBlue;
+}
 
+.rows {
+    display:flex;   
+  }
+  
+.column {
+    flex: 50%;
+    width: 90%;
+    height: 30rem;
+}
+
+.column__spacer{
+    width: 0.1rem;
+    border-right:0.1rem solid $lightGrayishBlue;
+}
+
+.portf{
+
+    color: $grayishBlue;
+    background-color: black;
+    //position: relative;
+    height: auto;
+    min-height: 46rem;
+    padding: 4rem 0px;
+    padding-top: 4rem;
+    
+    //transition: all 300ms ease-in-out;
+
+    .portf-container{
+ 
+        display: flex;
+        background-color: rgba(1, 4, 15, 0.486);
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        align-items: center;
+        margin: 0 auto;
+        height: 90%;
+        padding: 0.5rem;
+        width: 80%;
+    }
+    
+    .portf-container__description{
+    
+        font-size: 20px;
+        margin-bottom: 24px;          
+                   
+    }  
+
+    .portf-gridcontainer{
+
+        display:grid;
+        padding-top: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 0.5rem;
+        grid-row-gap:0.5rem;
+
+    }
+
+    .grid-item{
+
+        background-color:  $darkBlue;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        //padding: 20px;
+        //font-size: 30px;
+        text-align: center;
+        height: 20rem;
+        position: relative;
+        width: auto;
+        //z-index: 1;
+    }
+
+    &__cta {
+        font-size: $font-small;
+        color: $white;
+        transition: opacity 300ms ease-in-out;
+
+        
+
+        &:hover{
+            opacity: 0.3;
+            transition: 300ms ease-in-out; 
+            
+            &:only-child{
+                opacity: 1;
+            }
+            
+        }
+
+
+    }
+
+}
+
+
+.container {
+    position: relative;
+    text-align: center;   
+}
+  
+  .image {
+    opacity: 1;
+    border: 1px solid $brightcyan;
+    //display: block;
+    //object-fit: cover;
+    //height: auto;
+    height: 20rem;
+    width: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+  .container:hover .image {
+    opacity: 0.25;
+}
+  
+  .container:hover .middle {
+    opacity: 1;
+}
+  
+  .portf-button{
+
+    transition: opacity 300ms ease-in-out;
+
+        &:hover{
+            opacity: 0.7;
+            transition: 300ms ease-in-out; 
+
+            
+        }
+}
+
+  .button_padding{
+
+    position: absolute;
+    margin-top: 0.5rem;
+    margin-left: 2.5rem;
+
+
+
+}
 
 .content{
 
@@ -28,6 +183,7 @@
         height: auto;
         min-height: 46rem;
         padding: 4rem 0px;
+        padding-top: 4rem;
         
         transition: all 300ms ease-in-out;
 
@@ -42,10 +198,9 @@
         align-items: center;
         margin: 0 auto;
         height: 90%;
+        
         padding: 0.5rem;
-        width: 50rem;
-
-
+        width: 30%;
     }
 
     .content__heading{
@@ -65,13 +220,47 @@
 
     }
 
+    .publications__description{
+
+        font-size: 20px;
+        margin-bottom: 24px;
+        text-align: left;
+        //color: $veryLightGray;
+
+    }
+
+    .publications_links{
+
+        color: $grayishBlue;
+
+        &:hover {
+            color: $veryLightGray;
+
+            &::before {
+                opacity: 1;
+                               }
+        }
+        
+    }
+
+    .list_padding{
+
+        padding-top: 4rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+       // margin: 4rem;
+
+    }
+
+
 }
 
 .section_seperator {
 
     border-bottom: 0.2rem solid $brightcyan;
     //margin-bottom: 30px;
-    padding-bottom: 16px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
     
 }
 
@@ -94,7 +283,243 @@
 
 }
 
+.container-fluid {
+    // box-sizing: border-box;
+     background-color: black;
+     padding-top: 4rem;
+     padding-bottom: 4rem;
+     
+     .row {
+         //padding: 4rem;
+         width: 80%;
+         margin: 0 auto;
 
+
+         &:nth-child(even) {
+             background: #F1F4F5;
+         }
+     }
+ }
+ 
+ .example-title {
+     text-align: left;
+     
+     //padding: 0.5rem 0;
+     font-size: 25px;
+     //border-bottom: 1px solid #E4EAEC;
+     p {
+         margin: 0 auto;
+         //font-size: 16px;
+         //max-width: 400px;
+     }
+ }
+ 
+ .timeline {
+     line-height: 1.4em;
+     //height: min-content;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     h1, h2, h3, h4, h5, h6 {
+         line-height: inherit;
+     }
+ }
+ 
+ /*----- TIMELINE ITEM -----*/
+ 
+ .timeline-item {
+     padding-left: 40px;
+     position:relative;
+     &:last-child {
+         padding-bottom: 0;
+     }
+ }
+ 
+ /*----- TIMELINE INFO -----*/
+ 
+ .timeline-info {
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 3px;
+     margin: 0 0 .5em 0;
+     text-transform: uppercase;
+     white-space: nowrap;
+ }
+ /*----- TIMELINE MARKER -----*/
+ 
+ .timeline-marker {
+     position: absolute;
+     top: 0; bottom: 0; left: 0;
+     width: 15px;
+     &:before {
+         //background: $brightcyan;
+         //border: 3px solid transparent;
+         background: transparent;
+         border: 3px solid $brightcyan;
+         border-radius: 100%;
+         content: "";
+         display: block;
+         height: 15px;
+         position: absolute;
+         top: 4px; left: 0;
+         width: 15px;
+         transition: background 0.3s ease-in-out,
+                 border 0.3s ease-in-out;
+     }
+     &:after {
+         content: "";
+         width: 3px;
+         background: #CCD5DB;
+         display: block;
+         position: absolute;
+         top: 24px; bottom: 0; left: 6px;
+     }
+     .timeline-item:last-child &:after {
+         content: none;
+     }
+ }
+ .timeline-item:not(.period):hover .timeline-marker:before {
+     //background: transparent;
+     //border: 3px solid $brightcyan;
+     background: $brightcyan;
+     border: 3px solid transparent;
+ }
+ 
+ /*----- TIMELINE CONTENT -----*/
+ 
+ .timeline-content {
+     padding-bottom: 40px;
+     p:last-child {
+         margin-bottom: 0;
+     }
+ }
+
+  /*----- TIMELINE PERIOD -----*/
+    
+  .period {
+    padding: 0;
+    padding-bottom: 10;
+    .timeline-info {
+        display: none;
+        
+    }
+    .timeline-marker {
+        
+        &:before {
+            
+            background: transparent;
+            content: "";
+            width: 15px;
+            height: auto;
+            border: none;
+            border-radius: 0;
+            top: 0;
+            bottom: 30px;
+            position: absolute;
+            border-top: 3px solid #CCD5DB;
+            border-bottom: 3px solid #CCD5DB;
+        }
+        &:after {
+            content: "";
+            height: 32px;
+            top: auto;
+        }
+    }
+    .timeline-content {
+        //padding: 40px 0 70px;
+        padding: 10px;
+    }
+    .timeline-title {
+        margin: 0;
+    }
+}
+
+
+.phd-container{
+
+    color: $grayishBlue;
+    background-color: black;
+    text-align: left; 
+    //justify-content: right;
+    //position: relative;
+    //height: auto;
+    min-height: 46rem;
+    //padding: 4rem 0px;
+    //padding-top: 4rem;
+}
+
+.phd-gridcontainer{
+
+    display:grid;
+    padding-top: 2rem;
+    height: 100%;
+    width: 80%;
+    grid-template-columns: repeat(7, 1fr);
+    //grid-template-rows: repeat(1, 1vw);
+    grid-column-gap: 0.5rem;
+    grid-row-gap:0.5rem;
+    //align-items: center;
+}
+
+.phd-griditem{
+
+    background-color: $darkBlue;
+    justify-content: center;
+    height: 30rem;
+    //width: 100%;
+    align-items: center;
+
+}
+
+.phd__description{
+
+    font-size: 20px;
+    width:80%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    //padding-left: 4rem;
+}
+
+.publications_container{
+
+    display: flexbox;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    align-items: center; 
+    margin: 0 auto;
+    width: 80%;
+
+
+}
+
+
+.grid_publications{
+
+    display:grid;
+    padding-top: 2rem;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: repeat(7,1fr);
+    grid-column-gap: 0.5rem;
+    grid-row-gap:0.5rem;
+    
+    //align-items: center;
+}
+
+.grid_publications_item{
+    //border: 3px solid $brightcyan;
+    vertical-align: top;
+    padding-top: 1rem;
+    //background-color: $darkBlue;
+    //text-align: center; 
+    //justify-content: center;
+    //height: auto;
+    //width: 100%;
+
+}
 
 
 

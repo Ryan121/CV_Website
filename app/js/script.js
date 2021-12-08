@@ -12,10 +12,13 @@ const highlightMenu = () => {
 
     const elem = document.querySelector('.section_seperator');
     const aboutMenu = document.querySelector('#about-page');
+    const timelineMenu = document.querySelector('#timeline-page');
     const portfolioMenu = document.querySelector('#portf-page');
     const ph_dMenu = document.querySelector('#ph_d-page');
+    const publicationsMenu = document.querySelector('#publications-page');
     let scrollPos = window.scrollY;
 
+   // console.log(scrollPos);
 
     // Add 'highligh' class to my menu items
 
@@ -23,20 +26,45 @@ const highlightMenu = () => {
 
         aboutMenu.classList.add('section_seperator');
         portfolioMenu.classList.remove('section_seperator');
+        timelineMenu.classList.remove('section_seperator');
         ph_dMenu.classList.remove('section_seperator');
+        publicationsMenu.classList.remove('section_seperator');
         return;
 
-    }else if (window.innerWidth > 960 && scrollPos < 1400){
+    }else if (window.innerWidth > 960 && scrollPos < 1980){
 
-        aboutMenu.classList.remove('section_seperator');
-        portfolioMenu.classList.add('section_seperator');        
-        ph_dMenu.classList.remove('section_seperator');
-        return;
-
-    }else if (window.innerWidth > 960 && scrollPos < 2345){
-
-        ph_dMenu.classList.add('section_seperator');
+        timelineMenu.classList.add('section_seperator'); 
+        aboutMenu.classList.remove('section_seperator');  
         portfolioMenu.classList.remove('section_seperator');
+        ph_dMenu.classList.remove('section_seperator');
+        publicationsMenu.classList.remove('section_seperator');
+        return;
+
+    }else if (window.innerWidth > 960 && scrollPos < 2600){
+
+        timelineMenu.classList.remove('section_seperator'); 
+        aboutMenu.classList.remove('section_seperator');  
+        portfolioMenu.classList.add('section_seperator');
+        ph_dMenu.classList.remove('section_seperator');
+        publicationsMenu.classList.remove('section_seperator');
+        return;
+
+    }else if (window.innerWidth > 960 && scrollPos < 3400){
+
+        timelineMenu.classList.remove('section_seperator'); 
+        aboutMenu.classList.remove('section_seperator');  
+        portfolioMenu.classList.remove('section_seperator');
+        ph_dMenu.classList.add('section_seperator');
+        publicationsMenu.classList.remove('section_seperator');     
+        return;
+
+    }else if (window.innerWidth > 960 && scrollPos >= 3400){
+
+        timelineMenu.classList.remove('section_seperator'); 
+        aboutMenu.classList.remove('section_seperator');  
+        portfolioMenu.classList.remove('section_seperator');
+        ph_dMenu.classList.remove('section_seperator');
+        publicationsMenu.classList.add('section_seperator');     
         return;
     }
 
@@ -99,3 +127,7 @@ function sendMail() //Only wanted this to work with Outlook.
 {
     window.location.href = "mailto:r.sers14@gmail.com?";
 }
+
+
+
+

@@ -15,8 +15,9 @@
     <title>Home - Ryan Sers</title>
 </head>
 
-<body onLoad="timeRefresh(72000000);"> <!-- 72000000 -->
-    <script > 
+<body onLoad="timeRefresh(72000000);">
+    <!-- 72000000 -->
+    <script>
         function timeRefresh(time) {
 
             setTimeout("location.reload(true);", time);
@@ -44,9 +45,10 @@
 
             <div class="header__links hide-for-mobile">
                 <a id="about-page" href="#home" class="navbar__links">About</a>
+                <a id="timeline-page" href="#timeline" class="navbar__links">Timeline</a>
                 <a id="portf-page" href="#portfolio" class="navbar__links">Portfolio</a>
                 <a id="ph_d-page" href="#phd" class="navbar__links">&nbsp&nbsp&nbspPhD&nbsp&nbsp&nbsp&nbsp</a>
-                <a href="https://www.researchgate.net/profile/Ryan-Sers" class="link" target="_blank">Publications</a>
+                <a id="publications-page" href="#publications" class="navbar__links">Publications</a> 
                 <a href="https://www.linkedin.com/in/ryan-sers-0a23379b/" class="link" target="_blank">Linkedin</a>
                 <a href="https://github.com/Ryan121" class="link" target="_blank">Github</a>
                 <a href="#" class="link"></a>
@@ -61,6 +63,7 @@
 
         <div class="header__menu has-fade">
             <a href="#home">Home</a>
+            <a href="#timeline">Timeline</a>
             <a href="#portfolio">Experience</a>
             <a href="#phd">PhD</a>
             <a href="https://www.researchgate.net/profile/Ryan-Sers" class="link" target="_blank">Publications</a>
@@ -75,16 +78,23 @@
     <!-- About -->
     <div class="content seperator" id="home">
         <div class="content__container">
-            <h1 class="content__heading hero__heading"><span>Overview</span>
+          <!--   <h1 class="content__heading hero__heading"><span>Overview</span> -->
                 <p class="content__description">My name is Dr Ryan Sers and I am a Data Scientist based in the UK.
                     This site is a collection of professional and academic projects and links to date, that represent
-                    some of
-                    the skills I have developed and the experience gained that could be applied to future endevours. If
-                    you are interested in any of my projects or believe have pertintent previous experience for a role
+                    some of the skills I have developed and the experience gained that could be applied to future
+                    projects. If
+                    you are interested in any of my projects or believe have pertintent previous experience for a role,
                     please get in touch.
-
                 </p>
-            </h1>
+
+                <!-- <p> &nbsp; </p> -->
+
+                <a href="#" class="button header__cta">Download CV</a>
+
+                <p> &nbsp; </p>
+
+                <p class="content__description hero__heading"> <span>Scroll Down to see my timeline</span></p>
+            <!--  </h1> -->
         </div>
     </div>
 
@@ -101,15 +111,206 @@
                 </p>
             </h1>
         </div> -->
+    <!--         <div class="content seperator" id="timeline">
+            <div class="content__container">
+                <h1 class="content__heading hero__heading"><span>Timeline</span>
+                    <p class="content__description">......
+                    </p>
+                </h1>
+            </div>
+        </div> -->
 
-    <div class="content seperator" id="portfolio">
-        <div class="content__container">
-            <h1 class="content__heading">This page is under development.. Please come back soon
-                <p class="content__description">..............
-                </p>
-            </h1>
+    <div class="container-fluid" id="timeline">
+        <div class="row ">
+            <div class="example-title">
+                <h1 class="content__heading hero__heading"><span>Timeline</span>
+                </h1>
+                <!-- <p>Extra small devices (phones, less than 768px)</p> -->
+            </div>
+            <div class="">
+                <ul class="timeline">
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>September 2021 - Present</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Data Scientist at DXC Technology</h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
+                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
+                                sapien ut libero venenatis faucibus. ullam dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>March 2017 - Present</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Event Operations Engineer at Seiko Timing Services (Freelance)
+                            </h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
+                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
+                                sapien ut libero venenatis faucibus. ullam dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque.</p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>September 2017 - September 2021</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">PhD in Surgical Wearable Bio-robotics</h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
+                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
+                                sapien ut libero venenatis faucibus. ullam dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque. </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>June 2016 - September 2016</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Systems Operator at Hawkeye Innovations</h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
+                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
+                                sapien ut libero venenatis faucibus. ullam dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque. </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>September 2014 - August 2015</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">System Design Engineer at MBDA Missile Systems</h3>
+                            <p>Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere
+                                ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae
+                                sapien ut libero venenatis faucibus. ullam dictum felis
+                                eu pede mollis pretium. Pellentesque ut neque. </p>
+                        </div>
+                    </li>
+                    <li class="timeline-item">
+                        <div class="timeline-info">
+                            <span>October 2012 - July 2017</span>
+                        </div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3 class="timeline-title">Masters in Systems Engineering</h3>
+                            <p>Completed a Masters in Systems Engineering with a diploma in industrial studies (DIS).
+                                This degree largely focussed on
+                                implementing a systems approach in complex technical projects. Key elements included
+                                gathering requirements from
+                                customers, requirements design, system architecture, system design, system analysis and
+                                validation and verification
+                                activies. The final year of this degree also marked the first time I had worked with
+                                machine learning for activity recognition.</p>
+                        </div>
+
+                    </li>
+                    <li class="timeline-item period">
+                        <div class="timeline-info"></div>
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content"></div>
+
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
+
+    <div class="seperator">
+
+
+    </div>
+
+    <div class="portf" id="portfolio">
+        <div class="portf-container">
+            <div class="portf-container__description">
+                <h1 class="hero__heading"><span>Portfolio</span>
+                </h1>
+                <p class="description">This section presents examples of previous projects I have completed in both
+                    acedemic and commercial domains. These
+                    examples consist of projects in web design and data science and provide a flavour of my experince.
+                    For futher details, please do not hesisitate to get in touch.
+                </p>
+                <!-- <p>Extra small devices (phones, less than 768px)</p> -->
+
+                <div class="portf-gridcontainer">
+
+                    <div class="container">
+                        <img src="images/open.jpg" class="image">
+                        <div class="middle">
+                            <button type="button" class="portf-button">Read More</button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="images/hello.jpg" class="image">
+                        <div class="middle">
+                            <button type="button">Read More</button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="images/Happyhour.jpg" class="image">
+                        <div class="middle">Example text <p> &nbsp; </p>
+                            <button type="button">Read More</button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="images/Welcome.jpg" class="image">
+                        <div class="middle">
+                            <button type="button">Read More</button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="images/Welcome.jpg" class="image">
+                        <div class="middle">
+                            <button type="button">Read More</button>
+
+                        </div>
+                    </div>
+
+                    <div class="container">
+                        <img src="images/Welcome.jpg" class="image">
+                        <div class="middle">
+                            <button type="button">Read More</button>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!--     <div class="content seperator" id="">
+        <div class="content__container">
+            <h1 class="content__heading hero__heading"><span>Portfolio</span>
+                <p class="content__description">This section presents examples of previous projects I have completed in both acedemic and commercial domains. These
+                examples consist of projects in web design and data science and provide a flavour of the types of projects I am
+                passionate about and enjoy working on. For futher details, please do not hesisitate to get in touch.
+                </p>
+            </h1>
+
+        </div>
+    </div> -->
 
     <!-- PhD -->
     <!--     <div class="ph_d" id="phd">
@@ -124,12 +325,64 @@
             </div>
         </div>
     </div> -->
+    <div class="seperator">
 
-    <div class="content seperator" id="phd">
-        <div class="content__container">
-            <h1 class="content__heading">This page is also under development.. Please come back soonish
-                <p class="content__description">......................................
-                </p>
+
+    </div>
+
+    <div class="phd-container seperator" id="phd">
+        
+            <h1 class="content__heading hero__heading"><span>PhD</span>
+                 <p class="phd__description">To explore the research completed during the course of my PhD, please select one of the icons below, which represent chapters 1 - 7
+                </p> 
+            </h1>
+            <div class="phd-gridcontainer">
+
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+                    <div class="phd-griditem"></div>
+
+            </div>
+        
+    </div>
+
+    <div class="content" id="publications">
+        <div class="publications_container"> 
+            <h1 class="content__heading hero__heading"><span>Publications</span> 
+                
+                <!-- <a href="https://www.researchgate.net/profile/Ryan-Sers" class="button header__cta button_padding"
+                target="_blank">Go to ResearchGate</a> -->
+                
+                    <div class="grid_publications" > 
+
+                        <div class="publications__description grid_publications_item"><a href="https://doi.org/10.1007/s11548-021-02455-5"
+                            class="publications_links" target="_blank">Objective assessment of surgeon 
+                            kinematics during simulated laparoscopic surgery: a preliminary evaluation of the effect of 
+                            high body mass index models<p></p>(Journal Article - July 2021)</a></div>
+                        <div class=""><a class="button">Download</a></div>
+                        <div class="publications__description grid_publications_item"><a href="https://doi.org/10.1016/j.apergo.2021.103501"
+                            class="publications_links" target="_blank">The ergonomic impact of patient body mass index on surgeon 
+                            posture during simulated laparoscopy <p> </p>(Journal Article - June 2021)</a></div>
+                        <div class=""><a class="button">Download</a></div>
+                        <div class="publications__description grid_publications_item"><a href="https://doi.org/10.24433/CO.9711218.v1"
+                            class="publications_links" target="_blank">Multivariate time series classification of surgical experience 
+                            and performance using surgeon kinematic chain mechanics with machine and deep learning
+                            <p> </p>(Code Submission - April 2021)</a></div>
+                        <div class=""><a class="button">View</a></div>
+                        <div class="publications__description grid_publications_item"><a href="https://doi.org/10.24433/CO.7129140.v1"
+                            class="publications_links" target="_blank">Motion analysis using the Perception Neuron motion capture system
+                            <p> </p>(Code Submission - January 2021)</a>
+                        </div>
+                        <div class=""><a class="button">View</a></div>
+                        <div class="publications__description grid_publications_item"><a href="https://doi.org/10.1016/j.measurement.2019.107024"
+                            class="publications_links" target="_blank">Validity of the Perception Neuron inertial motion capture system 
+                            for upper body motion analysis <p> </p>(Journal Article - September 2019)</a></div>
+                        <div class=""><a class=" button">Download</a></div>
+                                
             </h1>
         </div>
     </div>
@@ -150,3 +403,28 @@
 
 
 <!-- This is placeholder text to fill the body of the webpage to test the functionality of the overlay header -->
+
+<!-- <div class="publications__description grid_publications_item"><a href="https://doi.org/10.1007/s11548-021-02455-5"
+    class="publications_links" target="_blank">Objective assessment of surgeon 
+    kinematics during simulated laparoscopic surgery: a preliminary evaluation of the effect of 
+    high body mass index models<p></p>(Journal Article - July 2021)</a></div>
+
+<div class="publications__description grid_publications_item"><a href="https://doi.org/10.1016/j.apergo.2021.103501"
+    class="publications_links" target="_blank">The ergonomic impact of patient body mass index on surgeon 
+    posture during simulated laparoscopy <p> </p>(Journal Article - June 2021)</a></div>
+
+<div class="publications__description"><a href="https://doi.org/10.24433/CO.9711218.v1"
+    class="publications_links" target="_blank">Multivariate time series classification of surgical experience 
+    and performance using surgeon kinematic chain mechanics with machine and deep learning
+    <p> </p>(Code Submission - April 2021)</a></div>
+
+<div class="publications__description"><a href="https://doi.org/10.24433/CO.7129140.v1"
+    class="publications_links" target="_blank">Motion analysis using the Perception Neuron motion capture system
+    <p> </p>(Code Submission - January 2021)</a>
+</div>
+
+<div class="publications__description"><a href="https://doi.org/10.1016/j.measurement.2019.107024"
+    class="publications_links" target="_blank">Validity of the Perception Neuron inertial motion capture system 
+    for upper body motion analysis <p> </p>(Journal Article - September 2019)</a></div>
+
+</div>   -->        

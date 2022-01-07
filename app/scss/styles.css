@@ -305,7 +305,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/images/CB.jpg");
+  background-image: url("images/CB.jpg");
   color: #96a69e;
   -webkit-transition: all 300ms ease-in-out;
   transition: all 300ms ease-in-out;

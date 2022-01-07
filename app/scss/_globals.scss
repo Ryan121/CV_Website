@@ -69,6 +69,21 @@ button, .button {
     color: $white;
 }
 
+.button_coll, button {
+    padding: 0.875rem 2.1875rem;
+    border:none;
+    //background: linear-gradient(to right, $grayishBlue, $brightcyan);
+    background-color: $darkBlue;
+    //font-size: $font-small;
+    //font-weight: 400;
+    //border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+    color: $grayishBlue;
+    margin-bottom: 0.25rem;
+    
+}
+
 // Visibility
 
 .hide-for-mobile {

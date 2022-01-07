@@ -114,40 +114,55 @@
 .portf {
   color: #96a69e;
   background-color: black;
-  height: auto;
   min-height: 46rem;
   padding: 4rem 0px;
   padding-top: 4rem;
 }
 
-.portf .portf-container {
+.portf-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   background-color: rgba(1, 4, 15, 0.486);
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
-  height: 90%;
   padding: 0.5rem;
-  width: 80%;
 }
 
-.portf .portf-container__description {
+.phd-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(1, 4, 15, 0.486);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.portf-container__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 20px;
   margin-bottom: 24px;
+  margin: 0 auto;
+  width: 75%;
+  padding-bottom: 1rem;
 }
 
-.portf .portf-gridcontainer {
+.portf-gridcontainer {
   display: -ms-grid;
   display: grid;
   padding-top: 2rem;
@@ -157,35 +172,73 @@
   grid-row-gap: 0.5rem;
 }
 
-.portf .grid-item {
+.grid-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #2d314d;
   border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 1.125rem;
   text-align: center;
-  height: 20rem;
-  position: relative;
-  width: auto;
+  min-height: 3rem;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  color: #96a69e;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
 }
 
-.portf__cta {
+.grid-item:hover {
+  color: #fafafa;
+  background-color: #2bb7da;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.grid-item:hover::before {
+  opacity: 1;
+}
+
+.phd-menu {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cta {
   font-size: 0.875rem;
   color: white;
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
 
-.portf__cta:hover {
+.cta:hover {
   opacity: 0.3;
   -webkit-transition: 300ms ease-in-out;
   transition: 300ms ease-in-out;
 }
 
-.portf__cta:hover:only-child {
+.cta:hover:only-child {
   opacity: 1;
 }
 
 .container {
   position: relative;
   text-align: center;
+  padding-top: 0.2rem;
 }
 
 .image {
@@ -238,21 +291,9 @@
 }
 
 .content {
-  color: #96a69e;
-  background-color: black;
-  height: auto;
-  min-height: 46rem;
-  padding: 4rem 0px;
-  padding-top: 4rem;
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.content .content__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: rgba(1, 4, 15, 0.486);
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -264,40 +305,112 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
-  height: 90%;
-  padding: 0.5rem;
-  width: 30%;
+  background-image: url("/images/CB.jpg");
+  color: #96a69e;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
-.content .content__heading {
+.content__container {
+  background-color: black;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 46rem;
+  padding: 4rem;
+  width: 80%;
+  height: 100%;
+}
+
+.timeline-content__container {
+  background-color: black;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  text-align: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 46rem;
+  padding: 4rem;
+  width: 80%;
+  height: 100%;
+}
+
+.portf-content__container {
+  background-color: black;
+  opacity: 0.9;
+  padding: 2rem;
+  width: 80%;
+}
+
+.phd-content__container {
+  background-color: black;
+  opacity: 0.9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+  width: 80%;
+}
+
+.content__heading {
   font-size: 50px;
 }
 
-.content .content__description {
+.content__description {
   font-size: 20px;
   margin-bottom: 24px;
 }
 
-.content .publications__description {
+.publications__description {
   font-size: 20px;
   margin-bottom: 24px;
   text-align: left;
 }
 
-.content .publications_links {
+.publications_links {
   color: #96a69e;
 }
 
-.content .publications_links:hover {
+.publications_links:hover {
   color: #fafafa;
 }
 
-.content .publications_links:hover::before {
+.publications_links:hover::before {
   opacity: 1;
 }
 
-.content .list_padding {
+.list_padding {
   padding-top: 4rem;
   padding-left: 4rem;
   padding-right: 4rem;
@@ -324,26 +437,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: black;
+  background-image: url("/images/moroccan-flower-dark.png");
   height: auto;
   padding-left: 1rem;
   padding-right: 1rem;
   border-bottom: 0.1rem solid #2bb7da;
-}
-
-.container-fluid {
-  background-color: black;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-
-.container-fluid .row {
-  width: 80%;
-  margin: 0 auto;
-}
-
-.container-fluid .row:nth-child(even) {
-  background: #F1F4F5;
 }
 
 .example-title {
@@ -478,19 +576,11 @@
   margin: 0;
 }
 
-.phd-container {
-  color: #96a69e;
-  background-color: black;
-  text-align: left;
-  min-height: 46rem;
-}
-
 .phd-gridcontainer {
   display: -ms-grid;
   display: grid;
   padding-top: 2rem;
   height: 100%;
-  width: 80%;
   -ms-grid-columns: (1fr)[7];
       grid-template-columns: repeat(7, 1fr);
   grid-column-gap: 0.5rem;
@@ -522,7 +612,9 @@
 }
 
 .publications_container {
-  display: flexbox;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -544,15 +636,96 @@
   padding-top: 2rem;
   -ms-grid-columns: 80% 20%;
       grid-template-columns: 80% 20%;
-  -ms-grid-rows: (1fr)[7];
-      grid-template-rows: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
   grid-column-gap: 0.5rem;
   grid-row-gap: 0.5rem;
 }
 
 .grid_publications_item {
   vertical-align: top;
-  padding-top: 1rem;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  height: 2rem;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #2bb7da;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content_one {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: none;
+  overflow: hidden;
+  background-color: #2d314d;
+  margin-top: 1px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+.menu_content {
+  min-height: 20rem;
+  background-color: black;
+  width: 80%;
+  padding: 4rem;
+}
+
+.PhD_image {
+  height: 45rem;
+  width: 55%;
+  background-color: #CCD5DB;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: center;
+}
+
+.PhD_image_container {
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  text-align: left;
+}
+
+.textformat {
+  text-align: left;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.bold2 {
+  font-weight: 1000;
+}
+
+.textformat_2 {
+  text-align: left;
+}
+
+.outer-wrapper {
+  overflow-y: scroll;
+  overflow-x: scroll;
 }
 
 html {
@@ -623,6 +796,16 @@ button, .button {
   border-radius: 30px;
   cursor: pointer;
   color: white;
+}
+
+.button_coll, button {
+  padding: 0.875rem 2.1875rem;
+  border: none;
+  background-color: #2d314d;
+  width: 100%;
+  cursor: pointer;
+  color: #96a69e;
+  margin-bottom: 0.25rem;
 }
 
 @media (max-width: 39.9375em) {

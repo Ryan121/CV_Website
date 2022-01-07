@@ -43,31 +43,50 @@
     color: $grayishBlue;
     background-color: black;
     //position: relative;
-    height: auto;
+    //height: auto;
     min-height: 46rem;
     padding: 4rem 0px;
     padding-top: 4rem;
-    
+}
     //transition: all 300ms ease-in-out;
 
     .portf-container{
  
         display: flex;
         background-color: rgba(1, 4, 15, 0.486);
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
-        text-align: left;
+        //text-align: left;
         align-items: center;
         margin: 0 auto;
-        height: 90%;
+        //height: 90%;
+
         padding: 0.5rem;
-        width: 80%;
+
+    }
+
+    .phd-container{
+ 
+        display: flex;
+        background-color: rgba(1, 4, 15, 0.486);
+        flex-wrap: wrap;
+        //justify-content: center;
+        //text-align: left;
+        //align-items: center;
+        text-align: center;
+        //vertical-align: middle;
+        margin: 0 auto;
     }
     
     .portf-container__description{
     
+        display: flex;
+        flex-direction: column;
         font-size: 20px;
-        margin-bottom: 24px;          
+        margin-bottom: 24px;      
+        margin: 0 auto;
+        width: 75%;
+        padding-bottom: 1rem;
                    
     }  
 
@@ -82,19 +101,44 @@
     }
 
     .grid-item{
-
+        
+        display: flex;
+        flex-direction: column;
         background-color:  $darkBlue;
         border: 1px solid rgba(0, 0, 0, 0.8);
-        //padding: 20px;
-        //font-size: 30px;
+        //border-radius: 10px;
+        font-size: $font-med;
         text-align: center;
-        height: 20rem;
-        position: relative;
-        width: auto;
-        //z-index: 1;
+        min-height: 3rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        color: $grayishBlue;
+        transition: opacity 300ms ease-in-out;
+        
+
+        &:hover {
+            color: $veryLightGray;
+            background-color: $brightcyan;
+            transition: 300ms ease-in-out; 
+
+            &::before {
+                opacity: 1;
+                               }
+        }
+
     }
 
-    &__cta {
+    .phd-menu{
+
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .cta {
         font-size: $font-small;
         color: $white;
         transition: opacity 300ms ease-in-out;
@@ -114,12 +158,11 @@
 
     }
 
-}
-
 
 .container {
     position: relative;
-    text-align: center;   
+    text-align: center; 
+    padding-top: 0.2rem;  
 }
   
   .image {
@@ -177,57 +220,113 @@
 
 .content{
 
-        color: $grayishBlue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-image: url("/images/CB.jpg");
+    //opacity: 0.9;
+    //height: auto;
+    color: $grayishBlue;
+    //min-height: 46rem;
+    transition: all 300ms ease-in-out;
+
+}
+
+.content__container{
+
+        //content: "";
         background-color: black;
-        //position: absolute;
-        height: auto;
-        min-height: 46rem;
-        padding: 4rem 0px;
-        padding-top: 4rem;
-        
-        transition: all 300ms ease-in-out;
-
-
-    .content__container{
-
+        opacity: 0.9;  
         display: flex;
-        background-color: rgba(1, 4, 15, 0.486);
         flex-direction: column;
         justify-content: center;
         text-align: center;
         align-items: center;
-        margin: 0 auto;
-        height: 90%;
-        
-        padding: 0.5rem;
-        width: 30%;
-    }
+        min-height: 46rem;
+        padding: 4rem;
+        width: 80%;
+        height: 100%;
 
-    .content__heading{
+}
 
-        font-size: 50px;
-        //margin-bottom: 24px;
-        //color: white;
+.timeline-content__container{
 
-    }
+    background-color: black;
+    opacity: 0.9;  
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+    min-height: 46rem;
+    padding: 4rem;
+    width: 80%;
+    height: 100%;
+
+}
+
+.portf-content__container{
+
+    background-color: black;
+    opacity: 0.9;  
+    //display: flex;
+    //flex-direction: row;
+    //flex-wrap: wrap;
+    //justify-content: left;
+    //text-align: left;
+    //align-items: center;
+    //min-height: 46rem;
+    padding: 2rem;
+    width: 80%;
+    //height: 100%;
+
+}
+
+.phd-content__container{
+
+    background-color: black;
+    opacity: 0.9;  
+    display: flex;
+    //flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+   // min-height: 46rem;
+    padding: 4rem;
+    width: 80%;
+
+}
 
 
-    .content__description{
 
-        font-size: 20px;
-        margin-bottom: 24px;
-        //color: $veryLightGray;
+.content__heading{
 
-    }
+    font-size: 50px;
+    //margin-bottom: 24px;
+    //color: white;
 
-    .publications__description{
+}
 
-        font-size: 20px;
-        margin-bottom: 24px;
-        text-align: left;
-        //color: $veryLightGray;
 
-    }
+.content__description{
+
+    font-size: 20px;
+    margin-bottom: 24px;
+    //color: $veryLightGray;
+
+}
+
+.publications__description{
+
+    font-size: 20px;
+    margin-bottom: 24px;
+    text-align: left;
+    //color: $veryLightGray;
+
+}
 
     .publications_links{
 
@@ -253,7 +352,7 @@
     }
 
 
-}
+
 
 .section_seperator {
 
@@ -272,7 +371,7 @@
     text-align: center;
     align-items: center;
     //margin: 0 1.1rem;
-    background-color: black;
+    background-image: url("/images/moroccan-flower-dark.png");
 
     height: auto;
     //width: 0.5rem;
@@ -282,24 +381,6 @@
     border-bottom: 0.1rem solid $brightcyan;
 
 }
-
-.container-fluid {
-    // box-sizing: border-box;
-     background-color: black;
-     padding-top: 4rem;
-     padding-bottom: 4rem;
-     
-     .row {
-         //padding: 4rem;
-         width: 80%;
-         margin: 0 auto;
-
-
-         &:nth-child(even) {
-             background: #F1F4F5;
-         }
-     }
- }
  
  .example-title {
      text-align: left;
@@ -436,25 +517,12 @@
 }
 
 
-.phd-container{
-
-    color: $grayishBlue;
-    background-color: black;
-    text-align: left; 
-    //justify-content: right;
-    //position: relative;
-    //height: auto;
-    min-height: 46rem;
-    //padding: 4rem 0px;
-    //padding-top: 4rem;
-}
-
 .phd-gridcontainer{
 
     display:grid;
     padding-top: 2rem;
     height: 100%;
-    width: 80%;
+    //width: 80%;
     grid-template-columns: repeat(7, 1fr);
     //grid-template-rows: repeat(1, 1vw);
     grid-column-gap: 0.5rem;
@@ -485,7 +553,7 @@
 
 .publications_container{
 
-    display: flexbox;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: left;
@@ -502,27 +570,102 @@
     display:grid;
     padding-top: 2rem;
     grid-template-columns: 80% 20%;
-    grid-template-rows: repeat(7,1fr);
+    grid-template-rows: repeat(5,1fr);
     grid-column-gap: 0.5rem;
     grid-row-gap:0.5rem;
-    
-    //align-items: center;
 }
 
 .grid_publications_item{
-    //border: 3px solid $brightcyan;
     vertical-align: top;
-    padding-top: 1rem;
-    //background-color: $darkBlue;
-    //text-align: center; 
-    //justify-content: center;
-    //height: auto;
-    //width: 100%;
-
 }
 
 
 
-
+ /* Style the button that is used to open and close the collapsible content */
+ .collapsible {
+    //background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    height: 2rem;
+    border: none;
+    text-align: left;
+    outline: none;
     
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: $brightcyan;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content_one {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: none;
+    overflow: hidden;
+    background-color: $darkBlue;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    word-wrap:break-word;
+    width: 100%;
+    
+  } 
+
+  .menu_content{
+
+    min-height: 20rem;
+    background-color: black;
+    width: 80%;
+    padding: 4rem;
+}
+
+.PhD_image{    
+    height: 45rem;
+    width: 55%;
+    background-color: #CCD5DB;
+    align-items: left;
+    text-align: center;
+}
+
+.PhD_image_container{
+
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    
+}
+
+.textformat{    
+    
+    text-align: left;
+
+}
+
+.bold{
+
+    font-weight: 600;
+}
+
+.bold2{
+
+    font-weight: 1000;
+}
+
+.textformat_2{
+
+    text-align: left;
+
+}
+
+.outer-wrapper {
+    overflow-y: scroll;
+    overflow-x: scroll;
+  }
 
